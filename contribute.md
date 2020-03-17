@@ -14,7 +14,7 @@
 
 #### 2. covid19-awareness എന്ന Github  റിപ്പോസിറ്ററി  സന്ദർശിക്കുക 
 
- [Goto Repository](https://raw.githubusercontent.com/ishamsu/covid19-awareness/master/public/assets/img/githubrepo.png?token=AOEBAXMZAWXOGBLQUZUPQTC6OEDRQ)
+[Goto Repository](https://raw.githubusercontent.com/ishamsu/covid19-awareness/master/public/assets/img/githubrepo.png?token=AOEBAXMZAWXOGBLQUZUPQTC6OEDRQ)
 
 ![fork](https://raw.githubusercontent.com/ishamsu/covid19-awareness/master/public/assets/img/githubrepo.png?token=AOEBAXMZAWXOGBLQUZUPQTC6OEDRQ)
 

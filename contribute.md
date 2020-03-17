@@ -44,9 +44,9 @@
 7. Now build the site to html again, include the header and footer by running 
 ```mdown --input "**/faq.md" --output html --header header.html --footer footer.html```
 
-* where faq.md is the file you edited or you're contributed.
+* (where faq.md is the file you edited or you're contributed.)
 
-8. Now a html file is generated in html folder of the repo and move this file to public.
-9. Finally make a push request on github for merging.
+8. Now a html file is generated in html folder of the repo and move this file to public folder.
+9. Finally make a push request on GitHub for merging.
 
 

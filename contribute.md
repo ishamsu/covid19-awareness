@@ -16,7 +16,7 @@
 
 [Goto Repository](https://github.com/ishamsu/covid19-awareness)
 
-![fork](https://raw.githubusercontent.com/ishamsu/covid19-awareness/master/docs/assets/img/githubrepo.png)
+<!-- ![fork](https://raw.githubusercontent.com/ishamsu/covid19-awareness/master/docs/assets/img/githubrepo.png) -->
 
 #### 3. റിപ്പോസിറ്ററി ഫോർക് ചെയ്യുക
  

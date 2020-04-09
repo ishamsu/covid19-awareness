@@ -1,3 +1,5 @@
+[![Release](https://img.shields.io/badge/Release-2020.04.2-blue.svg)](https://shields.io/)
+
 ## തിരുത്തലുകൾക്കും കൂട്ടിച്ചേർക്കലിനും
 
 ---

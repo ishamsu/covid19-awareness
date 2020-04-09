@@ -9,30 +9,34 @@
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/beautiful-danger-alert.css">
     <link rel="stylesheet" href="assets/css/beautiful-warning-alert.css">
+
+
 </head>
 
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header"><a class="navbar-brand" href="#">കോവിഡ്-19</a><button data-toggle="collapse" data-target="#navbar-main" class="navbar-toggle collapsed" type="buttton"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
+            <div class="navbar-header">
+                <img src="https://cdn.pixabay.com/photo/2020/03/22/17/17/virus-4957866_960_720.png" width=60px; style="margin-left: -20px;"></img> <a class="navbar-brand" href="#">കോവിഡ്-19</a><button data-toggle="collapse" data-target="#navbar-main"
+                    class="navbar-toggle collapsed" type="buttton"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
             <div class="collapse navbar-collapse" id="navbar-main">
                 <ul class="nav navbar-nav">
                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" id="themes" href="#"><strong>Official Resources&nbsp;</strong><span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu" aria-labelledby="themes">
-                            <li role="presentation" class="active"><a href="https://www.cdc.gov/">https://www.cdc.gov/</a></li>
+                            <li role="presentation" class=""><a href="https://www.cdc.gov/">https://www.cdc.gov/</a></li>
                             <li role="presentation"><a href="http://dhs.kerala.gov.in/">http://dhs.kerala.gov.in/</a></li>
                             <li role="presentation"><a href="https://minister-health.kerala.gov.in/">https://minister-health.kerala.gov.in/</a></li>
                         </ul>
                     </li>
                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" id="download" href="#"><strong>Are you safe?&nbsp;</strong><span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu" aria-labelledby="themes">
-                            <li role="presentation" class="active"><a href="quiz.html">Take a Quiz</a></li>
-                            <li class="divider" role="presentation"></li>
+                            <li role="presentation" class=""><a href="quiz.html">Take a Quiz</a></li>
+                            <!-- <li class="divider" role="presentation"></li> -->
                         </ul>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li role="presentation"><a href="https://github.com/ishamsu/covid19-awareness/tree/master" target="_blank">Contribute on GitHub&nbsp;<span class="label label-default">GitHub</span></a></li>
+                    <li role="presentation"><a href="https://github.com/ishamsu/covid19-awareness/tree/master" target="_blank">Contribute on GitHub&nbsp;<span class="label label-info">GitHub</span></a></li>
                 </ul>
             </div>
         </div>
@@ -42,12 +46,12 @@
             <div class="row">
                 <div class="col-lg-12">
                     <p class="text-right">
-                        <em>Last updated on 18/03/20 10:00pm</em></p>
-                    <p class="text-center" style="font-size: 20px;color: rgb(169,68,66);">Heads up!&nbsp;<i class="glyphicon glyphicon-warning-sign"></i> ആശങ്ക വേണ്ട ജാഗ്രത മതി&nbsp;<i class="glyphicon glyphicon-eye-open"></i></p>
+                        <em>Last updated on <i id="lastRefreshed1"></i></em></p>
+                    <p class="text-center" style="font-size: 20px;color:green">&nbsp;<i class=""></i> ആശങ്ക വേണ്ട ജാഗ്രത മതി&nbsp;<i class="glyphicon glyphicon-eye-open"></i></p>
                     <div class="page-header"></div>
-                    <div class="bs-component">
-                        <div class="jumbotron">
-                            <h1 style="padding-top: 0;font-size: 45px;">എന്താണ് കോവിഡ്-19?</h1>
+                    <div class="">
+                        <div class="jumbotron " style="background-color:rgba(177, 172, 189, 0.082);">
+                            <h1 style="padding-top: 0;font-size: 45px;">എന്താണ് <strong style="color: orangered;">കോവിഡ്-19?</strong></h1>
                             <p>മൃഗങ്ങളില്‍ നിന്നും മനുഷ്യരിലേക്കും മനുഷ്യരില്‍ നിന്നും മനുഷ്യരിലേക്കും പകരുന്ന മാരക വൈറസ് രോഗമാണ് കോവിഡ് 19.&nbsp;</p>
                             <p><a class="btn btn-primary btn-lg" role="button" href="#uravidam">കൂടുതൽ അറിയുക </a></p>
                         </div>
@@ -74,116 +78,391 @@
                 </div>
 
                 <div class="col-lg-4 col-md-5 col-sm-6">
-                    <div class="page-header">
-                        <h2 id="uravidam" class="text-left">കൊറോണ കേരളത്തിൽ</h2>
+                    <div class="page-header ">
+                        <h2 id="uravidam" class="text-left "><strong class="half_highlight">കൊറോണ കേരളത്തിൽ</strong></h2>
                     </div>
                     <p class="lead text-justify">2019-2020 ലാണ് കൊറോണ വൈറസ് പൊട്ടിപ്പുറപ്പെടുന്നത് ഇന്ത്യയിൽ 2020 ജനുവരി 30 ന് കേരളത്തിൽ സ്ഥിരീകരിച്ചു. 2020 മാർച്ച് 17 ലെ കണക്കനുസരിച്ച് 27 വൈറസ് കേസുകൾ സ്ഥിരീകരിച്ചിട്ടുണ്ട്. 18,000 ൽ അധികം ആളുകൾ കേരളത്തിൽ നിരീക്ഷണത്തിലാണ്. ചൈനയിൽ
-                        നിന്നും ഇറ്റലിയിൽ നിന്നും വരുന്ന യാത്രക്കാരിൽ നിന്നും അവരുടെ കോൺടാക്റ്റുകളിൽ നിന്നും കേസുകൾ റിപ്പോർട്ട് ചെയ്യപ്പെട്ടിട്ടുണ്ട്. രോഗം പടരാതിരിക്കാൻ സർക്കാർ നിരവധി മുൻകരുതലുകൾ എടുക്കുന്നു. പരീക്ഷ മാറ്റിവച്ചു. രോഗം തുടച്ചുമാറ്റുന്നതുവരെ
-                        എല്ലാ വിദ്യാഭ്യാസ സ്ഥാപനങ്ങളും അടച്ചിരിക്കുന്നു. ഹൈസ്കൂൾ, യൂണിവേഴ്സിറ്റി വിദ്യാർത്ഥികൾക്കുള്ള പ്രധാന പരീക്ഷകൾ നടത്തും. പാർലറുകളും വർക്ക് outട്ട് സെന്ററുകളും അടയ്ക്കാനും സർക്കാർ ഉത്തരവിട്ടിട്ടുണ്ട്. നേരിട്ടുള്ള സമ്പർക്കത്തിൽ നിന്ന്
-                        വൈറസിനെ തടയുന്നതിനാണിത്.</p>
+                        നിന്നും ഇറ്റലിയിൽ നിന്നും വരുന്ന യാത്രക്കാരിൽ നിന്നും അവരുടെ കോൺടാക്റ്റുകളിൽ നിന്നും കേസുകൾ റിപ്പോർട്ട് ചെയ്യപ്പെട്ടിട്ടുണ്ട്. രോഗം പടരാതിരിക്കാൻ സർക്കാർ നിരവധി മുൻകരുതലുകൾ എടുക്കുന്നു.</p>
 
                     <div class="page-header"></div>
                 </div>
 
                 <div class="col-md-12">
-                    <div class="sponsor"></div>
-                    <!-- <a href="#"> <img style="width: 500px  ;" src="assets/img/kovid.png"> -->
+                    <div class="page-header">
+                        <h2 id="tables" class="text-center"><strong class="half_highlight">ഇന്ത്യയിൽ വൈറസ്  ബാധിച്ചവർ</strong></h2>
 
-                </div>
-                <!-- <img style="width: 500px ;" src="assets/img/covid19-kerala.png"> -->
-                <br>
-                <!-- <img style="width: 300px ;" src="assets/img/covid3.png"> -->
-            </div>
-        </div>
-
-        <!-- <a href="#"> <img style="width: 200px  ;" src="assets/img/kovid.png"> -->
-
-        <!-- <img style="width: 300px ;" src="assets/img/covid19-kerala.png">
-        <br>
-        <img style="width: 300px ;" src="assets/img/covid3.png"> -->
-
-        <!-- <img style="width: 100px ;" src="assets/img/bsnl-logo.png"><img style="width: 200px ;" src="assets/img/LOGO PNG TECHONE.png"> -->
-
-        <div id="chikilsa" class="bs-docs-section clearfix"></div>
-        <div class="bs-docs-section">
-            <div id="lakshanagal" class="page-header">
-                <h2 id="" class="text-left ">ശ്രദ്ധിക്കുക</h2>
-
-                <div class="row" style="margin-top: -40px;">
-
-                </div>
-                <div class=" page-header ">
-                    <h2 id="tables "></h2>
-                </div>
-                <div class="alert alert-danger beautiful " role="alert ">
-                    <p class="text-left " style="font-size: 20px;color: rgb(169,68,66); ">ആലിംഗനം അല്ലെങ്കില്‍ ഹാന്‍ഡ്‌ഷേക്ക് പോലുള്ള സ്പര്‍ശിച്ചു കൊണ്ടുള്ള സാമൂഹിക ആശംസകള്‍ ഒഴിവാക്കുക.<i class="glyphicon glyphicon-remove "></i></p>
-                </div>
-                <div class="alert alert-danger beautiful " role="alert ">
-                    <p class="text-left " style="font-size: 20px;color: rgb(169,68,66);
-                    ">&nbsp;ഹാന്‍ഡ് റെയിലിംഗുകള്‍ (ഉദാ: ആരാധനാലയങ്ങളിലെ ക്യൂ സമ്പ്രദായത്തിന് വേണ്ടി ഒരിക്കിയിട്ടുള്ള കമ്പി) കഴിയുന്നിടത്തോളം തൊടരുത്.&nbsp;റെയിലിംഗ് പോലുള്ള സ്ഥലങ്ങളില്‍ സ്പര്‍ശിച്ചതിന് ശേഷം കൈ കഴുകുക.<i class="glyphicon glyphicon-ok "></i></p>
-                </div>
-                <div class="alert alert-danger beautiful " role="alert ">
-                    <p class="text-left " style="font-size: 20px;color: rgb(169,68,66);
-                    ">കൊറോണ വൈറസ് ബാധയുള്ള വ്യക്തികൾ<br>രോഗ ബാധിത പ്രദേശങ്ങളിൽ നിന്നും മടങ്ങി വന്ന വ്യക്തികൾ, ഇത്തരത്തിലുള്ളവരെ പരിചരിക്കുന്ന വ്യക്തികൾ എന്നിവർ രോഗം വ്യാപിക്കുന്നത് തടയാൻ മാസ്ക് ധരിക്കുന്നതാണ് ഉത്തമം.<i class="glyphicon glyphicon-ok "></i></p>
-                </div>
-                <div class="alert alert-danger beautiful " role="alert ">
-                    <p class="text-left " style="font-size: 20px;color: rgb(169,68,66); ">സോപ്പും വെള്ളവും ഉപയോഗിച്ച&nbsp;ഇടയ്ക്കിടെ കൈകൾ കഴുകുക . 20 സെക്കന്റോളം കൈകൾ കഴുകണം&nbsp;<i class="glyphicon glyphicon-ok "></i></p>
-                </div>
-                <div class="alert alert-danger beautiful " role="alert ">
-                    <p class="text-left " style="font-size: 20px;color: rgb(169,68,66); ">അനാവശ്യ ആശുപത്രി സന്ദർശനം ഒഴിവാക്കുക<i class="glyphicon glyphicon-remove "></i> </p>
-                </div>
-                <div class="alert alert-danger beautiful " role="alert ">
-                    <p class="text-left " style="font-size: 20px;color: rgb(169,68,66); ">രോഗ ബാധിത പ്രദേശങ്ങളിലേക്കുള്ള യാത്ര ഒളിവാകുക<i class="glyphicon glyphicon-remove "></i> </p>
-                </div>
-                <div class="alert alert-danger beautiful " role="alert ">
-                    <p class="text-left " style="font-size: 20px;color: rgb(169,68,66); ">പനി ചുമ തുടങ്ങിയ രോഗ ലക്ഷണങ്ങൾ കണ്ടാൽ സ്വയം ചികിത്സയ്ക്കു നിക്കാതെ ഉടൻ ഡോക്ടറെ കാണുക<i class="glyphicon glyphicon-ok "></i> </p>
-                </div>
-            </div>
-        </div>
-        <div class="bs-docs-section "></div>
-        <div class="bs-docs-section "></div>
-        <div class="bs-docs-section "></div>
-        <div class="bs-docs-section ">
-            <div class="row ">
-                <div class="col-lg-4 col-lg-offset-0 ">
-                    <div class="page-header ">
-                        <h2 id="tables ">Contributers</h2>
                     </div>
-                    <a href="# " style="font-size: 18px; "></a><span class="label label-success ">ishamsu</span><span class="label label-danger " style="margin: 10px; "></span>
-                    <div class="bs-component " style="margin-bottom: 10px; "></div>
-                    <a href="# " style="font-size: 18px; "></a><span class="label label-warning "></span></div>
-            </div>
-        </div>
-        <div class="page-header "></div>
-        <div class="bs-docs-section "></div>
-        <div class="bs-docs-section "></div>
-        <div class="bs-docs-section "></div>
-        <footer>
-            <div class="row ">
-                <div class="col-lg-12 ">
-                    <ul class="list-unstyled ">
-                        <li class="pull-right "><a href="#top ">മുകളിലേക്കു പോകുക</a></li>
-                        <li><a href="https://github.com/ishamsu/">GitHub</a></li>
-                        <li><a href="# ">Twitter</a></li>
-                        <li>
-                            <!-- <a href="# "></a> -->
-                        </li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <p>Based on the data collected from official sources</p>
-                    <p>Hosted with ❤️ &nbsp;<a href="https://pages.github.com">GItHub Pages</a></p>
-                    <p>Based on&nbsp;<a href="https://getbootstrap.com/">Bootstrap</a></p>
+                    <br><br>
+                    <div class="btn-group btn-group-justified" role="group" style="margin-bottom:15px; font-size: 100px;"><a class="btn btn-" role="button" href="#" style=" font-size: 20px">ആകെ<br><br><strong id="total"></strong></a><a class="btn btn-" role="button" href="#" style=" font-size: 20px; color:goldenrod;">സ്ഥിരീകരിച്ച<br>കേസുകൾ<br><strong id="confirmedCasesIndian"></strong></a>
+                        <a class="btn btn-" role="button" href="#" style="font-size: 20px; color: green;">ഡിസ്ചാർജ് <br>ചെയ്തവ<br><strong id="discharged"></strong></a>
+                    </div>
+                    <div class="btn-group btn-group-justified" role="group" style="margin-bottom:15px;">
+                        <a class="btn btn-" role="button" href="#" style=""><br></a>
+                        <a class="btn btn" role="button" href="#" style="font-size: 20px; color: red;"><br>മരണങ്ങൾ<br><strong id="deaths"></strong></a>
+                        <a class="btn btn-" role="button" href="#"><br></a>
+                    </div>
+                    <div class="" style="margin-bottom:15px;">
+                        <div class="bs-docs-section">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="page-header">
+                                        <h2 id="tables" class="text-left"><strong class="half_highlight">വിവിധ സംസ്ഥാങ്ങളിൽ കോവിഡ് ബാധിച്ചവർ</strong></h2>
+                                        <p class=" text-right"><button class="btn btn-basic" type="button">അവസാനം പുതുക്കിയത് <br><i id="lastRefreshed" style="color: darkred;"></i></button>
+
+                                    </div>
+                                    <a href="#demo" class="btn btn-danger btn-block" data-toggle="collapse" style="font-size: 15px;">View statewise list</a>
+
+                                    <div class="">
+                                        <div class="table-responsive container collapse" id="demo">
+                                            <table class="table table-striped table-hover" style="margin-left: -16px;">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="active">No</th>
+                                                        <th class="warning">തലസ്‌ഥാനം</th>
+                                                        <th class="info">സ്ഥിരീകരിച്ച കേസുകൾ</th>
+                                                        <th class="success">ഡിസ്ചാർജ് ചെയ്തു</th>
+                                                        <th class="danger">മരണപ്പെട്ടവർ</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <div>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td id="location15" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian15" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged15" style="color: limegreen;"></td>
+                                                        <td id="deaths15" style="color: red;"></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td id="location14" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian14" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged14" style="color: limegreen;"></td>
+                                                        <td id="deaths14" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>3</td>
+                                                        <td id="location0" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian0" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged0" style="color: limegreen;"></td>
+                                                        <td id="deaths0" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>4</td>
+                                                        <td id="location1" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian1" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged1" style="color: limegreen;"></td>
+                                                        <td id="deaths1" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>5</td>
+                                                        <td id="location2" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian2" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged2" style="color: limegreen;"></td>
+                                                        <td id="deaths2" style="color: red;"></td>
+                                                    </tr>
+                                                </div>
+                                                <div>
+                                                    <tr>
+                                                        <td>6</td>
+                                                        <td id="location3" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian3" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged3" style="color: limegreen;"></td>
+                                                        <td id="deaths3" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>7</td>
+                                                        <td id="location4" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian4" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged4" style="color: limegreen;"></td>
+                                                        <td id="deaths4" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>8</td>
+                                                        <td id="location5" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian5" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged5" style="color: limegreen;"></td>
+                                                        <td id="deaths5" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>9</td>
+                                                        <td id="location6" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian6" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged6" style="color: limegreen;"></td>
+                                                        <td id="deaths6" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>10</td>
+                                                        <td id="location7" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian7" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged7" style="color: limegreen;"></td>
+                                                        <td id="deaths7" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>11</td>
+                                                        <td id="location8" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian8" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged8" style="color: limegreen;"></td>
+                                                        <td id="deaths8" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>12</td>
+                                                        <td id="location9" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian9" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged9" style="color: limegreen;"></td>
+                                                        <td id="deaths9" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>13</td>
+                                                        <td id="location10" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian10" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged10" style="color: limegreen;"></td>
+                                                        <td id="deaths10" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>14</td>
+                                                        <td id="location11" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian11"></td>
+                                                        <td id="discharged11" style="color: limegreen;"></td>
+                                                        <td id="deaths11" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>15</td>
+                                                        <td id="location12" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian12" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged12" style="color: limegreen;"></td>
+                                                        <td id="deaths12" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>16</td>
+                                                        <td id="location13" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian13" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged13" style="color: limegreen;"></td>
+                                                        <td id="deaths13" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>17</td>
+                                                        <td id="location16" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian16" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged16" style="color: limegreen;"></td>
+                                                        <td id="deaths16" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>18</td>
+                                                        <td id="location17" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian17" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged17" style="color: limegreen;"></td>
+                                                        <td id="deaths17" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>19</td>
+                                                        <td id="location18" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian18" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged18" style="color: limegreen;"></td>
+                                                        <td id="deaths18" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>20</td>
+                                                        <td id="location19" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian19" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged19" style="color: limegreen;"></td>
+                                                        <td id="deaths19" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>21</td>
+                                                        <td id="location20" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian20" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged20" style="color: limegreen;"></td>
+                                                        <td id="deaths20" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>22</td>
+                                                        <td id="location21" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian21" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged21" style="color: limegreen;"></td>
+                                                        <td id="deaths21" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>23</td>
+                                                        <td id="location22" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian22" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged22" style="color: limegreen;"></td>
+                                                        <td id="deaths22" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>24</td>
+                                                        <td id="location23" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian23" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged23" style="color: limegreen;"></td>
+                                                        <td id="deaths23" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>25</td>
+                                                        <td id="location24" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian24" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged24" style="color: limegreen;"></td>
+                                                        <td id="deaths24" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>26</td>
+                                                        <td id="location25" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian25" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged25" style="color: limegreen;"></td>
+                                                        <td id="deaths25" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>27</td>
+                                                        <td id="location26" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian26" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged26" style="color: limegreen;"></td>
+                                                        <td id="deaths26" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>28</td>
+                                                        <td id="location27" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian27" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged27" style="color: limegreen;"></td>
+                                                        <td id="deaths27" style="color: red;"></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>29</td>
+                                                        <td id="location28" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian28" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged28" style="color: limegreen;"></td>
+                                                        <td id="deaths28" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>30</td>
+                                                        <td id="location29" class="text-left"></td>
+                                                        <td id="confirmedCasesIndian29" style="color:rgb(248, 150, 3)"></td>
+                                                        <td id="discharged29" style="color: limegreen;"></td>
+                                                        <td id="deaths29" style="color: red;"></td>
+                                                    </tr>
+                                                    <tr></tr>
+                                                </div>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
                 </div>
             </div>
-        </footer>
-    </div>
-    <script src="assets/js/jquery.min.js "></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js "></script>
-    <script src="assets/js/custom.js "></script>
+            <br><br>
+            <div class="page-header">
+                <h2 id="tables" class="text-left"><strong class="half_highlight1">What's new</strong></h2>
+
+            </div>
+            <div class="col-md-12" style="margin-bottom: 50px; color: gold; font-size: 20px; margin-left: -18px;" class="" id="displaywhatsnew">
+
+                <span style="color: dodgerblue;" class=""><p class="" style="">"After the pandemic is over, if you don't come out with new skill ⚡️ a plan for your future , more wisdom 🦄 and a vision for your life, REMEMBER 👉 You never had a <strong>time</strong> problem! you had an <strong>excuses</strong> problem 🤜" </p><p class=""></p></span>
+                </h2>
+            </div>
+            <p id="displaylink"></p>
+
+
+            <button onclick="newquote()" style="background-color:rgb(4, 138, 247); color: white; font-size: 15px; margin-top: 10px;" class="tada animated infinite">Make quarantine awesome🔥</button>
+
+
+
+
+            <!-- <div id="chikilsa" class="bs-docs-section clearfix"></div> -->
+            <div class="bs-docs-section">
+                <!-- <div id="lakshanagal" class="page-header">
+                    <h2 id="" class="text-left ">ശ്രദ്ധിക്കുക</h2>
+
+                    <div class="row" style="margin-top: -40px;">
+
+                    </div>
+                    <div class=" page-header ">
+                        <h2 id="tables "></h2>
+                    </div>
+                    <div class="alert alert-danger beautiful " role="alert ">
+                        <p class="text-left " style="font-size: 20px;color: rgb(169,68,66); ">ആലിംഗനം അല്ലെങ്കില്‍ ഹാന്‍ഡ്‌ഷേക്ക് പോലുള്ള സ്പര്‍ശിച്ചു കൊണ്ടുള്ള സാമൂഹിക ആശംസകള്‍ ഒഴിവാക്കുക.<i class="glyphicon glyphicon-remove "></i></p>
+                    </div>
+                    <div class="alert alert-danger beautiful " role="alert ">
+                        <p class="text-left " style="font-size: 20px;color: rgb(169,68,66);
+                    ">&nbsp;ഹാന്‍ഡ് റെയിലിംഗുകള്‍ (ഉദാ: ആരാധനാലയങ്ങളിലെ ക്യൂ സമ്പ്രദായത്തിന് വേണ്ടി ഒരിക്കിയിട്ടുള്ള കമ്പി) കഴിയുന്നിടത്തോളം തൊടരുത്.&nbsp;റെയിലിംഗ് പോലുള്ള സ്ഥലങ്ങളില്‍ സ്പര്‍ശിച്ചതിന് ശേഷം കൈ കഴുകുക.<i class="glyphicon glyphicon-ok "></i></p>
+                    </div>
+                    <div class="alert alert-danger beautiful " role="alert ">
+                        <p class="text-left " style="font-size: 20px;color: rgb(169,68,66);
+                    ">കൊറോണ വൈറസ് ബാധയുള്ള വ്യക്തികൾ<br>രോഗ ബാധിത പ്രദേശങ്ങളിൽ നിന്നും മടങ്ങി വന്ന വ്യക്തികൾ, ഇത്തരത്തിലുള്ളവരെ പരിചരിക്കുന്ന വ്യക്തികൾ എന്നിവർ രോഗം വ്യാപിക്കുന്നത് തടയാൻ മാസ്ക് ധരിക്കുന്നതാണ് ഉത്തമം.<i class="glyphicon glyphicon-ok "></i></p>
+                    </div>
+                    <div class="alert alert-danger beautiful " role="alert ">
+                        <p class="text-left " style="font-size: 20px;color: rgb(169,68,66); ">സോപ്പും വെള്ളവും ഉപയോഗിച്ച&nbsp;ഇടയ്ക്കിടെ കൈകൾ കഴുകുക . 20 സെക്കന്റോളം കൈകൾ കഴുകണം&nbsp;<i class="glyphicon glyphicon-ok "></i></p>
+                    </div>
+                    <div class="alert alert-danger beautiful " role="alert ">
+                        <p class="text-left " style="font-size: 20px;color: rgb(169,68,66); ">അനാവശ്യ ആശുപത്രി സന്ദർശനം ഒഴിവാക്കുക<i class="glyphicon glyphicon-remove "></i> </p>
+                    </div>
+                    <div class="alert alert-danger beautiful " role="alert ">
+                        <p class="text-left " style="font-size: 20px;color: rgb(169,68,66); ">രോഗ ബാധിത പ്രദേശങ്ങളിലേക്കുള്ള യാത്ര ഒളിവാകുക<i class="glyphicon glyphicon-remove "></i> </p>
+                    </div>
+                    <div class="alert alert-danger beautiful " role="alert ">
+                        <p class="text-left " style="font-size: 20px;color: rgb(169,68,66); ">പനി ചുമ തുടങ്ങിയ രോഗ ലക്ഷണങ്ങൾ കണ്ടാൽ സ്വയം ചികിത്സയ്ക്കു നിക്കാതെ ഉടൻ ഡോക്ടറെ കാണുക<i class="glyphicon glyphicon-ok "></i> </p>
+                    </div>
+                </div> -->
+            </div>
+            <div class="bs-docs-section "></div>
+            <div class="bs-docs-section "></div>
+            <div class="bs-docs-section "></div>
+            <div class="bs-docs-section ">
+                <div class="row  text-left">
+                    <div class="col-lg-4 col-lg-offset-0 ">
+                        <div class="page-header ">
+                            <h2 id="tables ">Contributers</h2>
+                        </div>
+                        <a href="# " style="font-size: 18px; "></a><span class="label label-success ">ishamsu</span><span class="label label-danger " style="margin: 10px; "></span>
+                        <div class="bs-component " style="margin-bottom: 10px; "></div>
+                        <a href="# " style="font-size: 18px; "></a><span class="label label-warning "></span></div>
+                </div>
+            </div>
+            <div class="page-header "></div>
+            <div class="bs-docs-section "></div>
+            <div class="bs-docs-section "></div>
+            <div class="bs-docs-section "></div>
+            <footer>
+                <div class="row  text-left">
+                    <div class="col-lg-12 ">
+                        <ul class="list-unstyled ">
+                            <li class="pull-right "><a href="#top ">മുകളിലേക്കു പോകുക</a></li>
+                            <li><a href="https://github.com/ishamsu/">GitHub</a></li>
+                            <li><a href="# ">Twitter</a></li>
+
+
+                            <li>
+                                <!-- <a href="# "></a> -->
+                            </li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p>Based on the data collected from official sources</p>
+                        <p>Hosted with ❤️ &nbsp;<a href="https://pages.github.com">GItHub Pages</a></p>
+                        <p>Based on&nbsp;<a href="https://getbootstrap.com/">Bootstrap</a></p>
+                        <p>The logo image by <a href="https://pixabay.com/users/Alexandra_Koch-621802/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4957866">Alexandra_Koch</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4957866">Pixabay</a></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="assets/js/jquery.min.js "></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js "></script>
+        <script src="assets/js/custom.js "></script>
+        <!-- //for jquery -->
+        <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+        <!-- //ajax vendeet -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="assets/js/whatsnew.js"></script>
+
+
+
 </body>
 
 </html>

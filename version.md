@@ -1,4 +1,4 @@
-[![Release](https://img.shields.io/badge/Release-2020.04.0-blue.svg)](https://shields.io/)
+[![Release](https://img.shields.io/badge/Release-2020.04.1-blue.svg)](https://shields.io/)
 
 ### Versioning
 

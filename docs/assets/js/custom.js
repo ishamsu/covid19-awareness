@@ -104,7 +104,7 @@ function getStateTable() {
         confirmedCases = obj.Kerala.districtData[dist[i]].confirmed;
         delt = obj.Kerala.districtData[dist[i]].delta.confirmed;
     
-        stateTable += "<tr><td>"+(parseInt(i)+1)+"</td><td class='text-left'>" + dist[i] + "</td><td style='color:rgb(248, 150, 3)'><span>" + confirmedCases + "</span><span style='color:red;' >(&uArr;" + delt + ")</span></td></tr>";
+        stateTable += "<tr><td>"+(parseInt(i)+1)+"</td><td class='text-left'>" + dist[i] + "</td><td style='color:rgb(248, 150, 3)'><span>" + confirmedCases + " </span><span style='color:red;' >(&uArr;" + delt + ")</span></td></tr>";
     
     
       }

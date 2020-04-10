@@ -253,3 +253,42 @@ function myFunction() {
         moreText.style.display = "inline";
     }
 }
+
+//stateTable
+
+
+function getStateTable() {
+
+    var settings = {
+      "url": "https://api.covid19india.org/state_district_wise.json",
+      "method": "GET",
+    
+    };
+    
+    $.ajax(settings).done(function (response) {
+      console.log(response);
+      var data = JSON.stringify(response);
+      var obj = JSON.parse(data);
+      var dist = Object.keys(obj.Kerala.districtData);
+      var stateTable = "<table class='table table-striped table-hover' style='margin-left: -16px;'> ";
+      stateTable+="<tr><th>No</th><th>ജില്ല</th><th class='info'>സ്ഥിരീകരിച്ച കേസുകൾ</th></tr>"
+      var confirmedCases;
+      var delt
+      for (i in dist) {
+        confirmedCases = obj.Kerala.districtData[dist[i]].confirmed;
+        delt = obj.Kerala.districtData[dist[i]].delta.confirmed;
+    
+        stateTable += "<tr><td>"+(parseInt(i)+1)+"</td><td class='text-left'>" + dist[i] + "</td><td style='color:rgb(248, 150, 3)'><span>" + confirmedCases + "</span><span>(&uArr;" + delt + ")</span></td></tr>";
+    
+    
+      }
+      stateTable += "</table>"
+    
+      document.getElementById("StateTable").innerHTML = stateTable;
+    
+    
+    });
+    }
+    
+    getStateTable();
+    

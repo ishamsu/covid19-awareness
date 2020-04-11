@@ -217,9 +217,9 @@ var cmTable = `
       <table class="table table-striped table-hover" style="margin-left: -16px;">
           <tr>
               <th class="success">No</th>
-              <th class="success">Panjayath</th>
-              <th class="success">Respective authority</th>
-              <th class="success">Phone</th>
+              <th class="success">പഞ്ചായത്തിന്റെ പേര്</th>
+              <th class="success">സന്നദ്ധസേവകന്റെ പേര്</th>
+              <th class="success">ഭക്ഷണം വേണ്ടവർ ബന്ധപ്പെടേണ്ട  നമ്പർ</th>
           </tr>`
 
 for (i in panjayth) {

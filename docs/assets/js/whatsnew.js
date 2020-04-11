@@ -1,29 +1,23 @@
-var whatsnew = [
-    "Awesome-quarantine - A Curated list of free & useful resources for this quarantine",
-    "Quarantine Vault by @makersofkerala",
-    "List of hackathons and price offering for solving different COVID-19 problem space",
-    "Automated Dino game using arduino"
+var whatsnew = {
+    "Awesome-quarantine - A Curated list of free & useful resources for this quarantine": "https://github.com/ishamsu/awesome-quarantine/blob/master/README.md",
+    "Quarantine Vault by @makersofkerala": "https://makers-of-kerala.now.sh/quarantine-vault",
+    "List of hackathons and price offering for solving different COVID-19 problem space": "https://makergram.com/community/topic/124/list-of-hackathons-and-price-offering-for-solving-different-covid-19-problem-space",
+    "Automated Dino game using arduino": "https://makergram.com/blog/automated-dino-game-using-arduino/"
+  }
+  var data = JSON.stringify(whatsnew);
+  var obj = JSON.parse(data);
+  var whatsNewContant = Object.keys(obj);
+  let i = 0;
+  var button, content
 
-]
-var links = [
-    "https://github.com/ishamsu/awesome-quarantine/blob/master/README.md",
-    "https://makers-of-kerala.now.sh/quarantine-vault",
-    "https://makergram.com/community/topic/124/list-of-hackathons-and-price-offering-for-solving-different-covid-19-problem-space",
-    "https://makergram.com/blog/automated-dino-game-using-arduino/"
+  //function which will run every 5 sec
+  setInterval(function () {
+    content = `<h3 style="color:black;"><a  href="${obj[whatsNewContant[i]]}">${whatsNewContant[i]}</a></h3>`;
+   
+    i++;
+    if (i == whatsNewContant.length) {
+      i = 0;
+    }
+    document.getElementById("whatsNewContant").innerHTML = content;
+  }, 5000);
 
-]
-
-function newquote() {
-    var randomno = Math.floor(Math.random() * (whatsnew.length));
-    document.getElementById('displaywhatsnew').innerHTML = whatsnew[randomno];
-    document.getElementById('displaywhatsnew').style.color = randomColors();
-    var str = links[randomno];
-    var result = str.link(links[randomno]);
-    document.getElementById("displaylink").innerHTML = result;
-
-
-}
-
-function randomColors() {
-    return '#' + Math.floor(Math.random() * 16777215).toString(16);
-}

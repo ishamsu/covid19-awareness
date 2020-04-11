@@ -183,7 +183,7 @@ function getStateTable() {
         }
         stateTable += "</table>"
 
-        document.getElementById("StateTable").innerHTML = stateTable;
+        document.getElementById("stateTable").innerHTML = stateTable;
 
 
     });

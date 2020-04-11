@@ -175,7 +175,7 @@ function getStateTable() {
                         <td class='text-left'>${dist[i]}</td>
                         <td style='color:rgb(248, 150, 3)'>
                             <span>${confirmedCases}</span>
-                            <span style='color:red;'>(&uArr;${delt}")</span>
+                            <span style='color:red;'>(&uArr;${delt})</span>
                         </td>
                     </tr>`;
 

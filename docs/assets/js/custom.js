@@ -68,25 +68,29 @@ function getCountryTable() {
 
     root = 'https://api.rootnet.in/covid19-in/stats';
     $.ajax({
-      url: root + '/latest/',
-      method: 'GET'
-    }).then(function (response) {
-      // console display cheyynn
-      var data = JSON.stringify(response);
-      var obj = JSON.parse(data);
+        url: root + '/latest/',
+        method: 'GET'
+    }).then(function(response) {
+        // console display cheyynn
+        var data = JSON.stringify(response);
+        var obj = JSON.parse(data);
 
-      //Summery    
-      $('#lastRefreshed').text(obj.lastRefreshed);
-      $('#lastRefreshed1').text(obj.lastRefreshed);
-      $('#total').text(obj.data.summary.total);
-      $('#confirmedCasesIndian').text(obj.data.summary.confirmedCasesIndian);
-      $('#discharged').text(obj.data.summary.discharged);
-      $('#deaths').text(obj.data.summary.deaths);
+        //Summery    
+        $('#lastRefreshed').text(obj.lastRefreshed);
+        $('#lastRefreshed1').text(obj.lastRefreshed);
+        $('#total').text(obj.data.summary.total);
+        $('#confirmedCasesIndian').text(obj.data.summary.confirmedCasesIndian);
+        $('#discharged').text(obj.data.summary.discharged);
+        $('#deaths').text(obj.data.summary.deaths);
+
+        //summaryofkerlala
+        $('#confirmedCasesKerala').text(obj.data.regional[15].confirmedCasesIndian);
+        $('#dischargedKerala').text(obj.data.regional[15].discharged);
+        $('#deathsKerala').text(obj.data.regional[15].deaths);
 
 
-
-      //Country Table to HTML
-      var countryTable = `
+        //Country Table to HTML
+        var countryTable = `
   <table class="table table-striped table-hover" style="margin-left: -16px;">
       <tr>
           <th class="active">No</th>
@@ -96,14 +100,14 @@ function getCountryTable() {
           <th class="danger">മരണപ്പെട്ടവർ</th>
 
       </tr>`;
-      var state, confirmedCases, discharged, deaths;
-      for (var i = 0; i < 29; i++) {
-        state = obj.data.regional[i].loc;
-        confirmedCases = obj.data.regional[i].confirmedCasesIndian;
-        discharged = obj.data.regional[i].discharged;
-        deaths = obj.data.regional[i].deaths;
-        console.log(state)
-        countryTable += `
+        var state, confirmedCases, discharged, deaths;
+        for (var i = 0; i < 29; i++) {
+            state = obj.data.regional[i].loc;
+            confirmedCases = obj.data.regional[i].confirmedCasesIndian;
+            discharged = obj.data.regional[i].discharged;
+            deaths = obj.data.regional[i].deaths;
+            console.log(state)
+            countryTable += `
     <tr>
 
           <td>${parseInt(i) + 1}</td>
@@ -113,16 +117,16 @@ function getCountryTable() {
           <td style="color: red;">${deaths}</td>
 
       </tr>`;
-      }
-      countryTable += "</table>";
-      document.getElementById("countryTable").innerHTML = countryTable;
+        }
+        countryTable += "</table>";
+        document.getElementById("countryTable").innerHTML = countryTable;
 
 
 
     });
 
-  }
-  getCountryTable();
+}
+getCountryTable();
 
 
 // Read more
@@ -148,25 +152,25 @@ function myFunction() {
 function getStateTable() {
 
     var settings = {
-      "url": "https://api.covid19india.org/state_district_wise.json",
-      "method": "GET",
-    
+        "url": "https://api.covid19india.org/state_district_wise.json",
+        "method": "GET",
+
     };
-    
-    $.ajax(settings).done(function (response) {
-      console.log(response);
-      var data = JSON.stringify(response);
-      var obj = JSON.parse(data);
-      var dist = Object.keys(obj.Kerala.districtData);
-      var stateTable = "<table class='table table-striped table-hover' style='margin-left: -16px;'> ";
-      stateTable+="<tr><th>No</th><th>ജില്ല</th><th class='info'>സ്ഥിരീകരിച്ച കേസുകൾ</th></tr>"
-      var confirmedCases;
-      var delt
-      for (i in dist) {
-        confirmedCases = obj.Kerala.districtData[dist[i]].confirmed;
-        delt = obj.Kerala.districtData[dist[i]].delta.confirmed;
-    
-        stateTable += `<tr>
+
+    $.ajax(settings).done(function(response) {
+        console.log(response);
+        var data = JSON.stringify(response);
+        var obj = JSON.parse(data);
+        var dist = Object.keys(obj.Kerala.districtData);
+        var stateTable = "<table class='table table-striped table-hover' style='margin-left: -16px;'> ";
+        stateTable += "<tr><th>No</th><th>ജില്ല</th><th class='info'>സ്ഥിരീകരിച്ച കേസുകൾ</th></tr>"
+        var confirmedCases;
+        var delt
+        for (i in dist) {
+            confirmedCases = obj.Kerala.districtData[dist[i]].confirmed;
+            delt = obj.Kerala.districtData[dist[i]].delta.confirmed;
+
+            stateTable += `<tr>
                         <td>${(parseInt(i)+1)}</td>
                         <td class='text-left'>${dist[i]}</td>
                         <td style='color:rgb(248, 150, 3)'>
@@ -174,16 +178,15 @@ function getStateTable() {
                             <span style='color:red;'>(&uArr;${delt}")</span>
                         </td>
                     </tr>`;
-    
-    
-      }
-      stateTable += "</table>"
-    
-      document.getElementById("StateTable").innerHTML = stateTable;
-    
-    
+
+
+        }
+        stateTable += "</table>"
+
+        document.getElementById("StateTable").innerHTML = stateTable;
+
+
     });
-    }
-    
-    getStateTable();
-    
+}
+
+getStateTable();

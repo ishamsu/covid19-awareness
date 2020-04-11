@@ -89,16 +89,30 @@
 
                 <div class="col-md-12">
                     <div class="page-header">
-                        <h2 id="tables" class="text-center"><strong class="half_highlight">ഇന്ത്യയിൽ വൈറസ്  ബാധിച്ചവർ</strong></h2>
+                        <h2 id="tables" class="text-center"><strong class="half_highlight">കേരളം</strong></h2>
 
                     </div>
                     <br><br>
-                    <div class="btn-group btn-group-justified" role="group" style="margin-bottom:15px; font-size: 100px;"><a class="btn btn-" role="button" href="#" style=" font-size: 20px">ആകെ<br><br><strong id="total"></strong></a><a class="btn btn-" role="button" href="#" style=" font-size: 20px; color:goldenrod;">സ്ഥിരീകരിച്ച<br>കേസുകൾ<br><strong id="confirmedCasesIndian"></strong></a>
-                        <a class="btn btn-" role="button" href="#" style="font-size: 20px; color: green;">ഡിസ്ചാർജ് <br>ചെയ്തവ<br><strong id="discharged"></strong></a>
+                    <div class="btn-group btn-group-justified" role="group" style="margin-bottom:15px; font-size: 100px;"><a class="btn btn-default" role="button" href="#" style=" font-size: 20px; color: orange; background-color: rgb(15, 37, 56)">സ്ഥിരീകരിച്ച <br>കേസുകൾ<br><strong id="confirmedCasesKerala"></strong></a><a class="btn btn-default" role="button"
+                            href="#" style=" font-size: 20px; color:green; background-color: rgb(15, 37, 56)">ഡിസ്ചാർജ്<br>ചെയ്തവ<br><strong id="dischargedKerala"></strong></a>
+                        <a class="btn btn-default" role="button" href="#" style="font-size: 20px; color: red; background-color: rgb(15, 37, 56)">മരണപ്പെട്ടവർ <br><br><strong id="deathsKerala"></strong></a>
+                    </div>
+                    <br>
+
+                    <!-- state table -->
+                    <div id="stateTable"></div>
+
+
+                    <div class="page-header">
+                        <h2 id="tables" class="text-center"><strong class="half_highlight">ഇന്ത്യ</strong></h2>
+                    </div>
+                    <br><br>
+                    <div class="btn-group btn-group-justified" role="group" style="margin-bottom:15px; font-size: 100px;"><a class="btn btn-default" role="button" href="#" style=" font-size: 20px; background-color: rgb(15, 37, 56); color: white;">ആകെ<br><br><strong id="total"></strong></a><a class="btn btn-default" role="button" href="#" style=" font-size: 20px; color:goldenrod; background-color: rgb(15, 37, 56)">സ്ഥിരീകരിച്ച<br>കേസുകൾ<br><strong id="confirmedCasesIndian"></strong></a>
+                        <a class="btn btn-default" role="button" href="#" style="font-size: 20px; color: green; background-color: rgb(15, 37, 56)">ഡിസ്ചാർജ് <br>ചെയ്തവ<br><strong id="discharged"></strong></a>
                     </div>
                     <div class="btn-group btn-group-justified" role="group" style="margin-bottom:15px;">
                         <a class="btn btn-" role="button" href="#" style=""><br></a>
-                        <a class="btn btn" role="button" href="#" style="font-size: 20px; color: red;"><br>മരണങ്ങൾ<br><strong id="deaths"></strong></a>
+                        <a class="btn btn-" role="button" href="#" style="font-size: 20px; color: red; background-color: rgb(15, 37, 56)"><br>മരണങ്ങൾ<br><strong id="deaths"></strong></a>
                         <a class="btn btn-" role="button" href="#"><br></a>
                     </div>
                     <div class="" style="margin-bottom:15px;">
@@ -110,47 +124,47 @@
                                         <p class=" text-right"><button class="btn btn-basic" type="button">അവസാനം പുതുക്കിയത് <br><i id="lastRefreshed" style="color: darkred;"></i></button>
 
                                     </div>
-                                    <a href="#countryTable" class="btn btn-danger btn-block" data-toggle="collapse" style="font-size: 15px;">View statewise list</a>
+                                    <a href="#countryTable" class="btn btn- btn-block" data-toggle="collapse" style="font-size: 15px; background-color: rgb(15, 37, 56); color: white;">View statewise list</a>
 
                                     <div class="">
                                         <div class="table-responsive container collapse" id="countryTable">
-                                        </div>  
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <br>
                 </div>
+                <br>
             </div>
-            <br><br>
-              
-            <br>
-            <!-- ADD stateTable Where You Want to show  -->
-            <!-- <div id="stateTable"></div> -->
-            <br>
-            <br>
-            <div class="page-header">
-                <h2 id="tables" class="text-left"><strong class="half_highlight1">What's new</strong></h2>
+        </div>
+        <br><br>
 
-            </div>
-            <div class="col-md-12" style="margin-bottom: 50px; color: gold; font-size: 20px; margin-left: -18px;" class="" id="displaywhatsnew">
+        <br>
+        <!-- ADD stateTable Where You Want to show  -->
+        <!-- <div id="stateTable"></div> -->
+        <br>
+        <br>
+        <div class="page-header">
+            <h2 id="tables" class="text-left"><strong class="half_highlight1">What's new</strong></h2>
 
-                <span style="color:midnightblue;" class=""><p>"After the pandemic is over, if you don't come out with new skill ⚡️ a plan for your future , more wisdom 🦄 and a vision for your life, REMEMBER 👉 You never had a <strong>time</strong> problem! you had an <strong>excuses</strong> problem 🤜" </p><p class=""></p></span>
-                </h2>
-            </div>
-            <p id="displaylink"></p>
+        </div>
+        <div class="col-md-12" style="margin-bottom: 50px; color: gold; font-size: 20px; margin-left: -18px;" class="" id="displaywhatsnew">
 
-
-            <button onclick="newquote()" style="background-color:rgb(4, 138, 247); color: white; font-size: 15px; margin-top: 10px;" class="tada animated infinite">Make quarantine awesome🔥</button>
+            <span style="color:midnightblue;" class=""><p>"After the pandemic is over, if you don't come out with new skill ⚡️ a plan for your future , more wisdom 🦄 and a vision for your life, REMEMBER 👉 You never had a <strong>time</strong> problem! you had an <strong>excuses</strong> problem 🤜" </p><p class=""></p></span>
+            </h2>
+        </div>
+        <p id="displaylink"></p>
 
 
+        <button onclick="newquote()" style="background-color:rgb(4, 138, 247); color: white; font-size: 15px; margin-top: 10px;" class="tada animated infinite">Make quarantine awesome🔥</button>
 
 
-            <!-- <div id="chikilsa" class="bs-docs-section clearfix"></div> -->
-            <div class="bs-docs-section">
-                <!-- <div id="lakshanagal" class="page-header">
+
+
+        <!-- <div id="chikilsa" class="bs-docs-section clearfix"></div> -->
+        <div class="bs-docs-section">
+            <!-- <div id="lakshanagal" class="page-header">
                     <h2 id="" class="text-left ">ശ്രദ്ധിക്കുക</h2>
 
                     <div class="row" style="margin-top: -40px;">
@@ -183,61 +197,61 @@
                         <p class="text-left " style="font-size: 20px;color: rgb(169,68,66); ">പനി ചുമ തുടങ്ങിയ രോഗ ലക്ഷണങ്ങൾ കണ്ടാൽ സ്വയം ചികിത്സയ്ക്കു നിക്കാതെ ഉടൻ ഡോക്ടറെ കാണുക<i class="glyphicon glyphicon-ok "></i> </p>
                     </div>
                 </div> -->
-            </div>
-            <div class="bs-docs-section "></div>
-            <div class="bs-docs-section "></div>
-            <div class="bs-docs-section "></div>
-            <div class="bs-docs-section ">
-                <div class="row  text-left">
-                    <div class="col-lg-4 col-lg-offset-0 ">
-                        <div class="page-header ">
-                            <h2 id="tables ">Contributers</h2>
-                        </div>
-                        <a href="https://github.com/ishamsu" style="font-size: 18px; "><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishamsu?label=ishamsu&style=social"></a><span class="label label-danger " style="margin: 10px; "></span>
-                        <div class="bs-component " style="margin-bottom: 10px; "></div>
-                        <a href="# " style="font-size: 18px; "></a><span class="label label-warning "></span></div>
-                </div>
-            </div>
-            <div class="page-header "></div>
-            <div class="bs-docs-section "></div>
-            <div class="bs-docs-section "></div>
-            <div class="bs-docs-section "></div>
-            <footer>
-                <div class="row  text-left">
-                    <div class="col-lg-12 ">
-                        <ul class="list-unstyled ">
-                            <li class="pull-right "><a href="#top ">മുകളിലേക്കു പോകുക</a></li>
-                            <li><a href="https://github.com/ishamsu/">GitHub</a></li>
-                            <li>
-                                <a href="https://twitter.com/intent/tweet?text=Checkout%20https%3A%2F%2Fishamsu.github.io%2Fcovid19-awareness%2F%20A%20Crowdsourced%20Malayalam%E2%9D%A4%EF%B8%8F%20wiki%20about%20Covid-19%F0%9F%A6%A0%20with%20a%20live%F0%9F%93%8A%20dashboard%20showing%20Corona%20cases(India)%F0%9F%87%AE%F0%9F%87%B3%0A%23crowdsourced%20%23malayalam%20%23resource%20%23covid19%20%23corona%20%23kerala%20%23awesomequarantine%20%23covid19india%20%23covid19kerala%0A"><img alt="Twitter URL" src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social"></a>
-                            </li>
-
-
-                            <li>
-                                <!-- <a href="# "></a> -->
-                            </li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                        <p>Based on the data collected from official sources</p>
-                        <p>Hosted with ❤️ &nbsp;<a href="https://pages.github.com">GItHub Pages</a></p>
-                        <p>Based on&nbsp;<a href="https://getbootstrap.com/">Bootstrap</a></p>
-                        <p>The logo image by <a href="https://pixabay.com/users/Alexandra_Koch-621802/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4957866">Alexandra_Koch</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4957866">Pixabay</a></p>
-                    </div>
-                </div>
-            </footer>
         </div>
-        <script src="assets/js/jquery.min.js "></script>
-        <script src="assets/bootstrap/js/bootstrap.min.js "></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js "></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js "></script>
-        <script src="assets/js/custom.js "></script>
-        <!-- //for jquery -->
-        <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
-        <!-- //ajax vendeet -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="assets/js/whatsnew.js"></script>
+        <div class="bs-docs-section "></div>
+        <div class="bs-docs-section "></div>
+        <div class="bs-docs-section "></div>
+        <div class="bs-docs-section ">
+            <div class="row  text-left">
+                <div class="col-lg-4 col-lg-offset-0 ">
+                    <div class="page-header ">
+                        <h2 id="tables ">Contributers</h2>
+                    </div>
+                    <a href="https://github.com/ishamsu" style="font-size: 18px; "><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishamsu?label=ishamsu&style=social"></a><span class="label label-danger " style="margin: 10px; "></span>
+                    <div class="bs-component " style="margin-bottom: 10px; "></div>
+                    <a href="# " style="font-size: 18px; "></a><span class="label label-warning "></span></div>
+            </div>
+        </div>
+        <div class="page-header "></div>
+        <div class="bs-docs-section "></div>
+        <div class="bs-docs-section "></div>
+        <div class="bs-docs-section "></div>
+        <footer>
+            <div class="row  text-left">
+                <div class="col-lg-12 ">
+                    <ul class="list-unstyled ">
+                        <li class="pull-right "><a href="#top ">മുകളിലേക്കു പോകുക</a></li>
+                        <li><a href="https://github.com/ishamsu/">GitHub</a></li>
+                        <li>
+                            <a href="https://twitter.com/intent/tweet?text=Checkout%20https%3A%2F%2Fishamsu.github.io%2Fcovid19-awareness%2F%20A%20Crowdsourced%20Malayalam%E2%9D%A4%EF%B8%8F%20wiki%20about%20Covid-19%F0%9F%A6%A0%20with%20a%20live%F0%9F%93%8A%20dashboard%20showing%20Corona%20cases(India)%F0%9F%87%AE%F0%9F%87%B3%0A%23crowdsourced%20%23malayalam%20%23resource%20%23covid19%20%23corona%20%23kerala%20%23awesomequarantine%20%23covid19india%20%23covid19kerala%0A"><img alt="Twitter URL" src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social"></a>
+                        </li>
+
+
+                        <li>
+                            <!-- <a href="# "></a> -->
+                        </li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <p>Based on the data collected from official sources</p>
+                    <p>Hosted with ❤️ &nbsp;<a href="https://pages.github.com">GItHub Pages</a></p>
+                    <p>Based on&nbsp;<a href="https://getbootstrap.com/">Bootstrap</a></p>
+                    <p>The logo image by <a href="https://pixabay.com/users/Alexandra_Koch-621802/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4957866">Alexandra_Koch</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4957866">Pixabay</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/jquery.min.js "></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js "></script>
+    <script src="assets/js/custom.js "></script>
+    <!-- //for jquery -->
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <!-- //ajax vendeet -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/whatsnew.js"></script>
 
 
 

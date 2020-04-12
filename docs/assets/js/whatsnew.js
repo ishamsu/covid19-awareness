@@ -7,16 +7,22 @@ var whatsnew = {
 var data = JSON.stringify(whatsnew);
 var obj = JSON.parse(data);
 var whatsNewContant = Object.keys(obj);
+var whatsNewLink = Object.values(obj)
 var i = 0;
 var button, content
+console.log(whatsNewLink);
 
 //function which will run every 5 sec
 setInterval(function() {
-    content = `<h3 style="color:black;"><a  href="${obj[whatsNewContant[i]]}">${whatsNewContant[i]}</a></h3>`;
-
-    i++;
-    if (i == whatsNewContant.length) {
+    console.log(i);
+    if (i >= whatsNewContant.length) {
         i = 0;
     }
-    document.getElementById("whatsNewContant").innerHTML = content;
+    
+    console.log(i);
+    content = `<h3 style="color:black;"><a  href="${whatsNewLink[i]}">${whatsNewContant[i]}</a></h3>`;
+    i++;
+    console.log(content);  
+        document.getElementById("whatsNewContant").innerHTML = content;
+  
 }, 5000);

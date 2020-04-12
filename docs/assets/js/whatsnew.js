@@ -18,11 +18,11 @@ setInterval(function() {
     if (whatsnewCount >= whatsNewContant.length) {
         whatsnewCount = 0;
     }
-    
+
     console.log(whatsnewCount);
     content = `<h3 style="color:black;"><a  href="${whatsNewLink[whatsnewCount]}">${whatsNewContant[whatsnewCount]}</a></h3>`;
     whatsnewCount++;
-    console.log(content);  
-        document.getElementById("whatsNewContant").innerHTML = content;
-  
+    console.log(content);
+    document.getElementById("whatsNewContant").innerHTML = content;
+
 }, 5000);

@@ -248,7 +248,7 @@ footer p {
 }
 
 .half_highlight {
-    background: linear-gradient(to top, rgba(250, 248, 250, 0.096) 50%, transparent 50%);
+    background: linear-gradient(to top, white 100%, transparent 50%);
 }
 
 .half_highlight1 {

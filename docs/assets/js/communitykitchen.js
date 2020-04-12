@@ -231,7 +231,7 @@ for (i in panjayth) {
               <td>${parseInt(i) + 1}</td>
               <td class="text-left">${panj}</td>
               <td class="text-left">${name}</td>
-              <td style="color: limegreen;">${phone}</td>
+              <td style="color: limegreen;"><a href="tel:${phone}">${phone}</a></td>
         </tr>`;
 }
 cmTable += "</table>";

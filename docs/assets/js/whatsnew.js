@@ -8,20 +8,20 @@ var data = JSON.stringify(whatsnew);
 var obj = JSON.parse(data);
 var whatsNewContant = Object.keys(obj);
 var whatsNewLink = Object.values(obj)
-var i = 0;
+var whatsnewCount = 0;
 var button, content
 console.log(whatsNewLink);
 
 //function which will run every 5 sec
 setInterval(function() {
-    console.log(i);
-    if (i >= whatsNewContant.length) {
-        i = 0;
+    console.log(whatsnewCount);
+    if (whatsnewCount >= whatsNewContant.length) {
+        whatsnewCount = 0;
     }
     
-    console.log(i);
-    content = `<h3 style="color:black;"><a  href="${whatsNewLink[i]}">${whatsNewContant[i]}</a></h3>`;
-    i++;
+    console.log(whatsnewCount);
+    content = `<h3 style="color:black;"><a  href="${whatsNewLink[whatsnewCount]}">${whatsNewContant[whatsnewCount]}</a></h3>`;
+    whatsnewCount++;
     console.log(content);  
         document.getElementById("whatsNewContant").innerHTML = content;
   

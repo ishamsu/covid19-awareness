@@ -252,7 +252,7 @@ footer p {
 }
 
 .half_highlight1 {
-    background: linear-gradient(to top, rgba(243, 239, 1, 0.548) 50%, transparent 50%);
+    background: linear-gradient(to top, lightblue 50%, transparent 50%);
 }
 
 #boxshadow {

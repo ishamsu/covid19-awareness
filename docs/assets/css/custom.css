@@ -263,3 +263,16 @@ footer p {
 #more {
     display: none;
 }
+
+
+
+.forMobile{
+    font-size: 20px;
+    }
+
+
+    @media only screen and (max-width: 600px){
+        .forMobile{
+        font-size: 11px;
+        }
+        }

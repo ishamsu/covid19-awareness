@@ -66,9 +66,8 @@
 function getCountryTable() {
 
 
-    root = 'https://api.rootnet.in/covid19-in/stats';
     $.ajax({
-        url: root + '/latest/',
+        url: 'https://api.covid19india.org/data.json',
         method: 'GET'
     }).then(function(response) {
         // console display cheyynn
@@ -76,17 +75,17 @@ function getCountryTable() {
         var obj = JSON.parse(data);
 
         //Summery    
-        $('#lastRefreshed').text(obj.lastRefreshed);
-        $('#lastRefreshed1').text(obj.lastRefreshed);
-        $('#total').text(obj.data.summary.total);
-        $('#confirmedCasesIndian').text(obj.data.summary.confirmedCasesIndian);
-        $('#discharged').text(obj.data.summary.discharged);
-        $('#deaths').text(obj.data.summary.deaths);
+        $('#lastRefreshed').text(obj.statewise[0].lastupdatedtime);
+        $('#lastRefreshed1').text(obj.statewise[0].lastupdatedtime);
+        $('#total').text(obj.statewise[0].active);
+        $('#confirmedCasesIndian').text(obj.statewise[0].confirmed);
+        $('#discharged').text(obj.statewise[0].recovered);
+        $('#deaths').text(obj.statewise[0].deaths);
 
         //summaryofkerlala
-        $('#confirmedCasesKerala').text(obj.data.regional[15].confirmedCasesIndian);
-        $('#dischargedKerala').text(obj.data.regional[15].discharged);
-        $('#deathsKerala').text(obj.data.regional[15].deaths);
+        $('#confirmedCasesKerala').text(obj.statewise[10].confirmed);
+        $('#dischargedKerala').text(obj.statewise[10].recovered);
+        $('#deathsKerala').text(obj.statewise[10].deaths);
 
 
         //Country Table to HTML
@@ -101,11 +100,11 @@ function getCountryTable() {
 
       </tr>`;
         var state, confirmedCases, discharged, deaths;
-        for (var i = 0; i < 29; i++) {
-            state = obj.data.regional[i].loc;
-            confirmedCases = obj.data.regional[i].confirmedCasesIndian;
-            discharged = obj.data.regional[i].discharged;
-            deaths = obj.data.regional[i].deaths;
+        for (var i = 0; i < 38; i++) {
+            state = obj.statewise[i].state;
+            confirmedCases = obj.statewise[i].confirmed;
+            discharged = obj.statewise[i].recovered;
+            deaths = obj.statewise[i].deaths;
             console.log(state)
             countryTable += `
     <tr>
@@ -127,6 +126,73 @@ function getCountryTable() {
 
 }
 getCountryTable();
+
+// // Country Table
+
+// function getCountryTable() {
+
+
+//     root = 'https://api.rootnet.in/covid19-in/stats';
+//     $.ajax({
+//         url: root + '/latest/',
+//         method: 'GET'
+//     }).then(function(response) {
+//         // console display cheyynn
+//         var data = JSON.stringify(response);
+//         var obj = JSON.parse(data);
+
+//         //Summery    
+//         $('#lastRefreshed').text(obj.lastRefreshed);
+//         $('#lastRefreshed1').text(obj.lastRefreshed);
+//         $('#total').text(obj.data.summary.total);
+//         $('#confirmedCasesIndian').text(obj.data.summary.confirmedCasesIndian);
+//         $('#discharged').text(obj.data.summary.discharged);
+//         $('#deaths').text(obj.data.summary.deaths);
+
+//         //summaryofkerlala
+//         $('#confirmedCasesKerala').text(obj.data.regional[15].confirmedCasesIndian);
+//         $('#dischargedKerala').text(obj.data.regional[15].discharged);
+//         $('#deathsKerala').text(obj.data.regional[15].deaths);
+
+
+//         //Country Table to HTML
+//         var countryTable = `
+//   <table class="table table-striped table-hover" style="margin-left: -16px;">
+//       <tr>
+//           <th class="active">No</th>
+//           <th class="warning">സംസ്ഥാനം</th>
+//           <th class="info">സ്ഥിരീകരിച്ച കേസുകൾ</th>
+//           <th class="success">ഡിസ്ചാർജ് ചെയ്തു</th>
+//           <th class="danger">മരണപ്പെട്ടവർ</th>
+
+//       </tr>`;
+//         var state, confirmedCases, discharged, deaths;
+//         for (var i = 0; i < 29; i++) {
+//             state = obj.data.regional[i].loc;
+//             confirmedCases = obj.data.regional[i].confirmedCasesIndian;
+//             discharged = obj.data.regional[i].discharged;
+//             deaths = obj.data.regional[i].deaths;
+//             console.log(state)
+//             countryTable += `
+//     <tr>
+
+//           <td>${parseInt(i) + 1}</td>
+//           <td class="text-left">${state}</td>
+//           <td style="color:rgb(248, 150, 3)">${confirmedCases}</td>
+//           <td style="color: limegreen;">${discharged}</td>
+//           <td style="color: red;">${deaths}</td>
+
+//       </tr>`;
+//         }
+//         countryTable += "</table>";
+//         document.getElementById("countryTable").innerHTML = countryTable;
+
+
+
+//     });
+
+// }
+// getCountryTable();
 
 
 // Read more

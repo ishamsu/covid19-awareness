@@ -1,4 +1,5 @@
 var whatsnew = {
+    "Webinar-series conducted by MIT": "https://webinar.covid19kerala.live/",
     "Awesome-quarantine - A Curated list of free & useful resources for this quarantine": "https://github.com/ishamsu/awesome-quarantine/blob/master/README.md",
     "Quarantine Vault by @makersofkerala": "https://makers-of-kerala.now.sh/quarantine-vault",
     "List of hackathons and price offering for solving different COVID-19 problem space": "https://makergram.com/community/topic/124/list-of-hackathons-and-price-offering-for-solving-different-covid-19-problem-space",

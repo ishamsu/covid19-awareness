@@ -83,9 +83,9 @@ function getCountryTable() {
         $('#deaths').text(obj.statewise[0].deaths);
 
         // summaryofkerlala
-        $('#confirmedCasesKerala').text(obj.statewise[13].confirmed);
-        $('#dischargedKerala').text(obj.statewise[13].recovered);
-        $('#deathsKerala').text(obj.statewise[13].deaths);
+        $('#confirmedCasesKerala').text(obj.statewise[16].confirmed);
+        $('#dischargedKerala').text(obj.statewise[16].recovered);
+        $('#deathsKerala').text(obj.statewise[16].deaths);
 
 
         //Country Table to HTML
